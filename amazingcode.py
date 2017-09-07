@@ -1,3 +1,5 @@
+import pytest
+
 def amazingcode(num1, num2):
     if (type(num1) != int):
         raise ValueError('Type Error: first arg is not an int')
@@ -6,6 +8,5 @@ def amazingcode(num1, num2):
     summation = num1 + num2
     if (summation < 0):
         return 0
-    else: 
+    else:
         return summation
-
