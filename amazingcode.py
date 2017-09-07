@@ -1,10 +1,8 @@
 def amazingcode(num1, num2):
-    if !isinstance(num1, int):
-        print "Type Error: first arg is not an int"
-        return
-    if !isinstance(num2, int):
-        print "Type Error: second arg is not an int"
-        return
+    if (type(num1) != int):
+        raise ValueError('Type Error: first arg is not an int')
+    if (type(num2) != int):
+        raise ValueError('Type Error: second arg is not an int')
     summation = num1 + num2
     if (summation < 0):
         return 0
